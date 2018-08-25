@@ -15,14 +15,12 @@ app.use(BodyParser.json());
 
 const corsSettings = {
   origin: [
-    'http://productbreakfastclub.com/',
-    'https://productbreakfastclub.com/',
-    'http://vue-poc.jakubemfoto.pl/',
-    'https://vue-poc.jakubemfoto.pl/',
+    'http://productbreakfastclub.com',
+    'https://productbreakfastclub.com',
   ]
 };
 
-app.use(Cors(corsSettings)); 
+app.use(Cors()); 
 app.use('/', Router);
 
 app.listen(PORT);

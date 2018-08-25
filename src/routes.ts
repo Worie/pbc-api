@@ -35,7 +35,7 @@ router.get('/', async (req, res) => {
  */
 router.get('/flush-cache', async (req, res) => {
   cache.flushAll();
-  res.status(200);
+  res.status(200).json({ status: 'ok'});
 });
 
 

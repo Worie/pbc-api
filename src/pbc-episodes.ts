@@ -12,7 +12,7 @@ export default async function () {
 
   let latestEpisode = 0;
   rawEpisodes.forEach((e: any) => latestEpisode = Math.max(latestEpisode, Number(e.itunes.episode)));
-
+  
   const parsedEpisodes = rawEpisodes.map((e: any) => {
     return {
       author: e.itunes.author,
