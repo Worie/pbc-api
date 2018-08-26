@@ -13,7 +13,7 @@ Node.js and Redis server
 
 2. Run `npm install` in the root directory
 
-3. Run `npm run dev` to start a local server
+3. Run `npm run dev` to start a local server (or start via `node dist/app.js`)
 
 ### Endpoints
 
